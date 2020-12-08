@@ -19,8 +19,8 @@ use Illuminate\Support\Facades\Route;
 //    return $request->user();
 //});
 
-Route::get('articles', 'ArticleController@index');
-Route::get('articles/{article}', 'ArticleController@show');
-Route::post('articles', 'ArticleController@store');
-Route::put('articles/{article}', 'ArticleController@update');
-Route::delete('articles/{article}', 'ArticleController@delete');
+Route::get('articles', 'App\Http\Controllers\ArticleController@index');
+Route::get('articles/{article}', 'App\Http\Controllers\ArticleController@show');
+Route::post('articles', 'App\Http\Controllers\ArticleController@store');
+Route::put('articles/{article}', 'App\Http\Controllers\ArticleController@update');
+Route::delete('articles/{article}', 'App\Http\Controllers\ArticleController@delete');
