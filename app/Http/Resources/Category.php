@@ -15,7 +15,7 @@ class Category extends JsonResource
     public function toArray($request)
     {
         return [
-            'id'=>$this->name,
+            'id'=>$this->id,
             'name'=>$this->name,
             'articles'=>"/api/category/".$this->id."/articles"
         ];
